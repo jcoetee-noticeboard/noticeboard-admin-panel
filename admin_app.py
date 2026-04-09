@@ -12,7 +12,7 @@ HEADERS = {"API-KEY": API_KEY}
 # ---------------- HOME (UPLOAD PAGE) ----------------
 @app.route('/')
 def index():
-    return render_template('admin.html')
+    return render_template('templates/admin.html')
 
 
 # ---------------- CREATE (UPLOAD) ----------------
