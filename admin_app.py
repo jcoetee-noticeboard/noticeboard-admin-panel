@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
-BASE_URL = "http://127.0.0.1:4040"
+BASE_URL = "https://micrographic-meg-unaccustomedly.ngrok-free.dev"
 API_KEY = "mysecret"
 
 HEADERS = {"API-KEY": API_KEY}
