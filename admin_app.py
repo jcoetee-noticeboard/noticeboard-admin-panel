@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
-BASE_URL = "https://democrat-allowed-provided-mods.trycloudflare.com"
+BASE_URL = "http://192.168.137.251:5000"
 API_KEY = "mysecret"
 
 HEADERS = {"API-KEY": API_KEY}
