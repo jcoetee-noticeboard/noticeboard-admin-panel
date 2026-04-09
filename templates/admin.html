@@ -23,32 +23,39 @@
 
 <form id="addForm" enctype="multipart/form-data">
 
-<input type="text" name="title" placeholder="Title" required>
+    <input type="text" name="title" placeholder="Title" required>
 
-<select name="media_type" onchange="toggleFields(this.value)">
-    <option value="text">Text</option>
-    <option value="image">Image</option>
-    <option value="video">Video</option>
-    <option value="slideshow">Slideshow</option>
-</select>
+    <select name="media_type" onchange="toggleFields(this.value)">
+        <option value="text">Text</option>
+        <option value="image">Image</option>
+        <option value="video">Video</option>
+        <option value="slideshow">Slideshow</option>
+    </select>
 
-<div id="textField">
-    <textarea name="content" placeholder="Enter text"></textarea>
-</div>
+    <input type="number" name="duration" placeholder="Duration">
 
-<div id="fileField" style="display:none;">
-    <input type="file" name="file">
-</div>
+    <div id="textField">
+        <textarea name="content" placeholder="Enter text"></textarea>
+    </div>
+		
+	<div id="fileField" style="display:none;" class="file-container">
+		<input type="file" id="fileInput" name="file" 
+			   onchange="updateFileName(this)">
+		<label for="fileInput">Choose File</label>
+		<span class="file-name">No file chosen</span>
+	</div>
 
-<div id="slideField" style="display:none;">
-    <input type="file" name="files" multiple>
-</div>
+	<div id="slideField" style="display:none;" class="file-container">
+		<input type="file" id="slideInput" name="files" multiple
+			   onchange="updateFileName(this)">
+		<label for="slideInput">Choose Files</label>
+		<span class="file-name">No files chosen</span>
+	</div>	
 
-<input type="number" name="duration" placeholder="Duration">
-
-<button type="submit" class="btn">Upload</button>
+    <button type="submit" class="btn">Upload</button>
 
 </form>
+
 </div>
 </div>
 

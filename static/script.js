@@ -172,6 +172,19 @@ function editNotice(id, title) {
     openModal("updateModal");
 }
 
+function updateFileName(input) {
+    const container = input.parentElement;
+    const fileNameSpan = container.querySelector(".file-name");
+
+    if (!input.files || input.files.length === 0) {
+        fileNameSpan.textContent = input.multiple ? "No files chosen" : "No file chosen";
+        return;
+    }
+
+    const names = Array.from(input.files).map(f => f.name).join(", ");
+    fileNameSpan.textContent = names;
+}
+
 document.getElementById("updateForm").addEventListener("submit", function(e){
     e.preventDefault();
 
