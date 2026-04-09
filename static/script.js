@@ -54,9 +54,9 @@ function loadNotices() {
 			else if (media_type === 'video') {
 				contentHTML = `
 					<div style="width:120px;height:80px;background:#111;color:white;
-					display:flex;align-items:center;justify-content:center;">
+					display:flex;align-items:center;justify-content:center;margin:auto;">
 					🎥 Video
-					</div>`;
+					</div>`;					
 				actionButtons += `<button onclick="viewContent('video','${file_path}')">View</button>`;
 			}
 
@@ -73,8 +73,8 @@ function loadNotices() {
 			let row = `
 			<tr>
 				<td>${id}</td>
-				<td>${title}</td>
-				<td>${media_type}</td>
+				<td>${title}</td>				
+				<td>${media_type.charAt(0).toUpperCase() + media_type.slice(1)}</td>
 				<td>${contentHTML}</td>
 				<td>${actionButtons}</td>
 			</tr>
