@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
-BASE_URL = "https://micrographic-meg-unaccustomedly.ngrok-free.dev"
+BASE_URL = "https://democrat-allowed-provided-mods.trycloudflare.com"
 API_KEY = "mysecret"
 
 HEADERS = {"API-KEY": API_KEY}
