@@ -78,8 +78,17 @@ input, textarea, select {
     background: #3b82f6;
     color: white;
     border: none;
-    padding: 10px;
-    width: 95%;
+    padding: 14px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #2563eb;
 }
 
 .view-section {
@@ -126,13 +135,19 @@ td:nth-child(4) > * {
 
 /* button */
 .file-container label {
-    background: #3b82f6 !important;
-    color: white !important;
-    padding: 10px 18px;
+    background: #e2e8f0 !important;
+    color: #475569 !important;
+    padding: 8px 14px;
     border-radius: 6px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 13px;
     display: inline-block;
+    border: 1px solid #cbd5e1;
+}
+
+.file-container label:hover {
+    background: #cbd5e1 !important;
 }
 
 /* filename text */
