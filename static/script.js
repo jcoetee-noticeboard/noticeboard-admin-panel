@@ -1,4 +1,4 @@
-const BASE_URL = "http://192.168.137.197:5000";
+const BASE_URL = "http://10.167.237.154:5000";
 const API_KEY = "mysecret";
 
 /* ================= MODAL CONTROL ================= */
